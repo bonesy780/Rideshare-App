@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Riseshare</Text>
+      <Text style={styles.title}>Rideshare</Text>
       <Text style={styles.subtitle}>
         Compare Uber, Lyft and taxi fares in Edmonton.
       </Text>

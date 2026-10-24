@@ -1,4 +1,4 @@
-# Riseshare
+# Rideshare
 
 A phone app (iPhone and Android) that compares estimated ride costs across Uber, Lyft and taxis. Starting with Edmonton.
 
