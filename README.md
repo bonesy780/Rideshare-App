@@ -19,7 +19,7 @@ A phone app (iPhone and Android) that compares estimated ride costs across Uber,
 
 1. Set up the Expo app (done)
 2. Edmonton fare estimator (done): `src/fares/`
-3. Comparison screen: pickup and drop-off, estimates sorted by price, buttons to open each app
+3. Comparison screen (done): pickup and drop-off, estimates sorted by price, buttons to open each app
 4. Test builds for friends (TestFlight and an Android test link)
 
 ## Fare estimates
@@ -28,5 +28,9 @@ A phone app (iPhone and Android) that compares estimated ride costs across Uber,
 
 - **Taxi** rates are official, from the City of Edmonton [Vehicle for Hire Bylaw 17400](https://webdocs.edmonton.ca/bylaws/17400-Vehicle-for-Hire-Bylaw-C-20250401.pdf): $4.10 for the first 135 m, $0.25 per further 135 m, $30/hour waiting, plus the City's 13.29% fuel surcharge.
 - **Uber and Lyft** don't publish Edmonton rate cards, so their numbers are starting estimates. To tune them, request quotes in each app for a few trips of different lengths (without booking), note the price, distance and time, and adjust the values in `rates.ts`.
+
+## Maps services
+
+Address search uses OpenStreetMap's free [Nominatim](https://operations.osmfoundation.org/policies/nominatim/) service and driving routes use the free [OSRM demo server](https://github.com/Project-OSRM/osrm-backend/wiki/Demo-server). Neither needs an API key, but both are only meant for light use, so switch `src/places/` to Google Maps or Mapbox before a public launch.
 
 Prices shown are estimates. Real fares vary with surge pricing, traffic and route.
